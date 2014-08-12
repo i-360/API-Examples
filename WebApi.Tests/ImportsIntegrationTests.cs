@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Net.Http;
-using i360.Web.Api.Tests.Properties;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WebApi.Tests.Properties;
 
-namespace i360.Web.Api.Tests
+namespace WebApi.Tests
 {
     [TestClass]
     public class ImportsControllerIntegrationTests

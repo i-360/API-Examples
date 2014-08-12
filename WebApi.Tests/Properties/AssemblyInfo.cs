@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("i360.Web.Api.Tests")]
+[assembly: AssemblyTitle("WebApi.Tests")]
 [assembly: AssemblyDescription("i360 Web API Integration Tests")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("i360")]
-[assembly: AssemblyProduct("i360.Web.Api.Tests")]
+[assembly: AssemblyProduct("WebApi.Tests")]
 [assembly: AssemblyCopyright("Copyright © i360 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i360.Web.Api.Tests", "i360.Web.Api.Tests.csproj", "{AE34F3D0-DF84-4ACD-BB0D-D664470A9A2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Tests", "WebApi.Tests\WebApi.Tests.csproj", "{AE34F3D0-DF84-4ACD-BB0D-D664470A9A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML_JS_Example", "HTML_JS_Example\HTML_JS_Example.csproj", "{22161100-D036-4F44-8153-3C451E023B1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AE34F3D0-DF84-4ACD-BB0D-D664470A9A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE34F3D0-DF84-4ACD-BB0D-D664470A9A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE34F3D0-DF84-4ACD-BB0D-D664470A9A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22161100-D036-4F44-8153-3C451E023B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22161100-D036-4F44-8153-3C451E023B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22161100-D036-4F44-8153-3C451E023B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22161100-D036-4F44-8153-3C451E023B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

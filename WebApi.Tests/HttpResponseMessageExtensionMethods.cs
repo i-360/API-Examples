@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net.Http;
 
-namespace i360.Web.Api.Tests
+namespace WebApi.Tests
 {
     public static class HttpResponseMessageExtensionMethods
     {

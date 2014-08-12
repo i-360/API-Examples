@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Net.Http.Headers;
 using System.Text;
-using i360.Web.Api.Tests.Properties;
+using WebApi.Tests.Properties;
 
-namespace i360.Web.Api.Tests
+namespace WebApi.Tests
 {
     internal class AuthenticationHeaderValueFactory
     {

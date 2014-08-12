@@ -6,8 +6,8 @@
     <ProjectGuid>{AE34F3D0-DF84-4ACD-BB0D-D664470A9A2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>i360.Web.Api.Tests</RootNamespace>
-    <AssemblyName>i360.Web.Api.Tests</AssemblyName>
+    <RootNamespace>WebApi.Tests</RootNamespace>
+    <AssemblyName>WebApi.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
