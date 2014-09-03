@@ -94,9 +94,10 @@ namespace WebApi.Tests
                     LastName = "SMITH"
                 }
             };
+            var request = new {Contacts = contacts, ApiNotification = true};
 
             // Act
-            var response = _client.PutAsJsonAsync("Contacts", contacts).Result;
+            var response = _client.PutAsJsonAsync("Contacts", request).Result;
 
             // Assert
             response.EnsureSuccessStatusCode();

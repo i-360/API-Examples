@@ -34,7 +34,7 @@ namespace WebApi.Tests.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://test-api.i-360.com/1.0/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://test-api.i-360.com/1.1/")]
         public string TestUrl {
             get {
                 return ((string)(this["TestUrl"]));

@@ -2,87 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Contact PUT Example</title>
-
-    <script src="Scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
-
-    <script type="text/javascript" language="javascript">
-        var apiUrl = "https://test-api.i-360.com/1.0/Contacts";
-        var userId = '00000000-0000-0000-0000-000000000000'; // don't forget to replace with valid user id
-        jQuery.support.cors = true;
-
-        $(document).ready(function () {
-            $("#Import").click(function () {
-                var state = $("#stateInput").val();
-                var firstname = $("#fristNameInput").val();
-                var lastname = $("#lastNameInput").val();
-                var gender = $("#genderInput").val();
-                var phone = $("#phoneInput").val();
-                var email = $("#emailInput").val();
-                var address1 = $("#address1Input").val();
-                var address2 = $("#address2Input").val();
-                var city = $("#cityInput").val();
-                var zip = $("#zipInput").val();
-
-                if (state == null || state == "") {
-                    alert("State must be filled out");
-                    return false;
-                }
-
-                if (firstname == null || firstname == "") {
-                    alert("First name must be filled out");
-                    return false;
-                }
-
-                if (lastname == null || lastname == "") {
-                    alert("Last name must be filled out");
-                    return false;
-                }
-
-                if (email == null || email == "") {
-                    alert("Email must be filled out");
-                    return false;
-                }
-
-                var contact = new Object();
-                contact.RegisteredState = state;
-                contact.firstname = firstname;
-                contact.lastname = lastname;
-                contact.gender = gender;
-                contact.Phone = phone;
-                contact.Email = email;
-                contact.Address1 = address1;
-                contact.Address2 = address2;
-                contact.City = city;
-                contact.State = state;
-                contact.Zip = zip;
-
-                var contactArray = new Array();
-                contactArray.push(contact);
-                var json = JSON.stringify(contactArray);
-
-                $.ajax({
-                    url: apiUrl,
-                    type: 'PUT',
-                    contentType: "application/json",
-                    dataType: 'json',
-                    data: json,
-                    crossDomain: false,
-                    beforeSend: function (xhr) {
-                        var parameter = btoa(userId + ':');
-                        xhr.setRequestHeader("Authorization", "Basic " + parameter);
-                    },
-                    success: function (data) {
-                        $("#responseText").html("Contact Import Id: " + data.ImportId + " Status: " + data.Status);
-                    },
-                    error: function (xhr) {
-                        $("#responseText").html("Error in Operation: " + xhr.status);
-                    }
-                });
-
-                return false;
-            });
-        });
-    </script>
 </head>
 <body>
     <div>
@@ -189,4 +108,7 @@
         <span id="responseText"></span>
     </div>
 </body>
+<script type="text/javascript" src="Scripts/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="Scripts/jquery.signalR-2.1.1.js"></script>
+<script type="text/javascript" src="Scripts/Contact-PUT-Example.js"></script>
 </html>
