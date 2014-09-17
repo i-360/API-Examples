@@ -8,6 +8,6 @@ A colon must follow the user id. The user id and colon together must be base 64 
 
 The user id supplied must be for a valid user who has been assigned the Generic API role. To get your user id, go to [User Id] (https://api-platform.i-360.com/1.0/SDK/UserId). Contact your account manager if you do not have a valid user name and password or your user account is not granted the Generic API role.
 
-* To view our API documentation, please visit https://api-platform.i-360.com/1.0/Help
+* To view our API documentation, please visit https://api-platform.i-360.com/1.1/Help
 * To request a user ID, please email API@i-360.com
 * For more information about i360, please visit http://i-360.com
