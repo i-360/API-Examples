@@ -61,6 +61,7 @@
     <Compile Include="AuthenticationHeaderValueFactory.cs" />
     <Compile Include="HttpResponseMessageExtensionMethods.cs" />
     <Compile Include="ImportsIntegrationTests.cs" />
+    <Compile Include="OrderedSearchesIntegrationTests.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -68,6 +69,9 @@
     </Compile>
     <Compile Include="ContactsIntegrationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchColumnsIntegrationTests.cs" />
+    <Compile Include="SearchParametersIntegrationTests.cs" />
+    <Compile Include="SearchParameterValuesControllerIntegrationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

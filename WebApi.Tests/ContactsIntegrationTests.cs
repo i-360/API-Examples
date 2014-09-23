@@ -30,7 +30,7 @@ namespace WebApi.Tests
         {
             // Arrange
             const long contactId = 1;
-            string requestUri = string.Format("Contacts/{0}", contactId);
+            var requestUri = string.Format("Contacts/{0}", contactId);
 
             // Act
             var response = _client.GetAsync(requestUri).Result;
@@ -50,7 +50,7 @@ namespace WebApi.Tests
             const string address1 = "100+MAIN+ST";
             const string city = "SMITHFIELD";
             const string state = "VA";
-            string requestUri =
+            var requestUri =
                 string.Format("Contacts?firstname={0}&lastname={1}&address1={2}&city={3}&state={4}", firstName, lastName,
                     address1, city, state);
 
