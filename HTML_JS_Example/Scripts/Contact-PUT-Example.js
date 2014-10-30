@@ -74,6 +74,7 @@ $(function () {
 
     $.ajaxSetup({
         beforeSend: function (jqXhr, settings) {
+            // SignalR handles authorization through its own pipeline
             if (settings.url.indexOf("/signalr") == -1)
                 jqXhr.setRequestHeader('Authorization', 'Basic ' + MyBase64EncodedAuthString);
             return true;
@@ -83,6 +84,7 @@ $(function () {
     var connection = $.hubConnection();
     connection.logging = true;
     connection.url = signalrUrl;
+    // SignalR authorization with the i360 Web Api is handled through the qs property
     connection.qs = "auth=" + MyBase64EncodedAuthString;
     var contactsHubProxy = connection.createHubProxy('contacts');
     contactsHubProxy.on('NotifyImportStatusChanged', function (importJob) {
