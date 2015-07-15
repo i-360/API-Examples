@@ -6,7 +6,7 @@ using WebApi.Tests.Properties;
 namespace WebApi.Tests
 {
     [TestClass]
-    public class ContactsIntegrationTests
+    public class ContactsTests
     {
         private HttpClient _client;
         
@@ -14,7 +14,7 @@ namespace WebApi.Tests
         public void InitializeTests()
         {
             _client = new HttpClient { BaseAddress = new Uri(Settings.Default.TestUrl) };
-            _client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValueFactory.Create();
+            _client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValueFactory.CreateForApiTester();
         }
 
         [TestCleanup]

@@ -7,7 +7,7 @@ namespace WebApi.Tests
     {
         public static void PrintContent(this HttpResponseMessage response)
         {
-            string content = response.Content.ReadAsStringAsync().Result;
+            var content = response.Content.ReadAsStringAsync().Result;
             Debug.Print(content);
         }
     }

@@ -7,12 +7,16 @@ namespace WebApi.Tests
 {
     internal class AuthenticationHeaderValueFactory
     {
-        public static AuthenticationHeaderValue Create()
+        public static AuthenticationHeaderValue CreateForApiTester()
         {
-            var userId = Settings.Default.UserId;
-            return Create(userId);
+            return Create(Settings.Default.ApiTester);
         }
 
+        public static AuthenticationHeaderValue CreateForApiTesterWithoutApiRole()
+        {
+            return Create(Settings.Default.ApiTesterWithoutApiRole);
+        }
+        
         public static AuthenticationHeaderValue Create(Guid userProviderKey)
         {
             string authInfo = userProviderKey + ":" + string.Empty;
