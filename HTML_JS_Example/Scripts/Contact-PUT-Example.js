@@ -1,6 +1,6 @@
-﻿var apiUrl = "https://test-api.i-360.com/1.1/Contacts"; // don't forget to replace with https://api-platform.i-360.com/1.1/Contacts
+﻿var apiUrl = "https://api-platform.i-360.com/1.1/Contacts"; 
 var userId = '00000000-0000-0000-0000-000000000000'; // don't forget to replace with valid user id
-var signalrUrl = 'https://test-api.i-360.com/1.1/signalr'; // don't forget to replace with https://api-platform.i-360.com/1.1/signalr
+var signalrUrl = 'https://api-platform.i-360.com/1.1/signalr'; 
 var MyBase64EncodedAuthString = btoa(userId + ':');
 
 $(function () {
