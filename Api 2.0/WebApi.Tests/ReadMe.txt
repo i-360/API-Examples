@@ -1,0 +1,2 @@
+﻿Update the ApiTesterUserName, ApiTesterPassword and OrgId values in the project settings to the user, password and organization ID your account rep at i360 gave you for the test environment.
+If you have any questions, please contact your account rep.

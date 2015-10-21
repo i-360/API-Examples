@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebApi.Tests.Properties" GeneratedClassName="TestSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api-platform.i-360.com/2.0/</Value>
+    </Setting>
+    <Setting Name="ApiTesterUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">username</Value>
+    </Setting>
+    <Setting Name="ApiTesterPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">password</Value>
+    </Setting>
+    <Setting Name="LoginUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://login.i-360.com/core/connect/token</Value>
+    </Setting>
+    <Setting Name="OrgId" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1234</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
