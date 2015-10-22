@@ -28,7 +28,7 @@ namespace WebApi.Tests
             _client.Dispose();
             _client = null;
         }
-        
+
         [TestMethod]
         [TestCategory("Smoke")]
         public async Task GivenSearchRequest_Post_ReturnsSuccess()
@@ -97,7 +97,7 @@ namespace WebApi.Tests
             // Assert
             response.EnsureSuccessStatusCode();
         }
-        
+
         private static List<string> CreateOrderByList()
         {
             // See SearchColumns tests for these values
@@ -135,8 +135,14 @@ namespace WebApi.Tests
             const int radiusLatLongParameter = 27;
             const int hasEmailParameter = 377;
             const int ageRangeParameter = 15;
-            const int touchPointParameter = 264;
-            const int touchpointDateRangeParameter = 311;
+            const int touchPointParameter1 = 264;
+            const int touchPointParameter2 = 266;
+            const int touchPointParameter3 = 271;
+            const int touchPointParameter4 = 273;
+            const int touchPointParameter5 = 290;
+            const int touchPointParameter6 = 291;
+            const int touchPointParameter7 = 292;
+            const int touchPointParameter8 = 293;
 
             // See Search Parameter Values tests for these values
             const int virginiaStateValue = 47;
@@ -151,8 +157,16 @@ namespace WebApi.Tests
                 "38.8590066481109#-77.26634110268854\n" +
                 "38.87424355282139#-77.30616654214167\n";
             const string ageRange = "18#30";
-            const string touchpointValue1 = "200#207"; // CategoryID#TouchpointID, these values must be actual category and touch point IDs that exist in the database
-            const string touchpointDateRangeValue = "01/01/2015#10/21/2015";
+
+            // CategoryID#TouchpointID&DateRangeFrom#DateRangeTo, these values must be actual category and touch point IDs that exist in the database
+            const string touchpointValue1 = "200#204&9/27/2013#10/22/2015";
+            const string touchpointValue2 = "200#205&9/27/2013#10/22/2015";
+            const string touchpointValue3 = "200#206&9/27/2013#10/22/2015";
+            const string touchpointValue4 = "200#207&9/27/2013#10/22/2015";
+            const string touchpointValue5 = "200#208&9/27/2013#10/22/2015";
+            const string touchpointValue6 = "200#209&9/27/2013#10/22/2015";
+            const string touchpointValue7 = "200#210&9/27/2013#10/22/2015";
+            const string touchpointValue8 = "200#211&9/27/2013#10/22/2015";
 
             var criteria = new Dictionary<int, string>
             {
@@ -164,8 +178,14 @@ namespace WebApi.Tests
                 {radiusLatLongParameter, radiusLatLongValue},
                 {hasEmailParameter, "1"},
                 {ageRangeParameter, ageRange},
-                {touchPointParameter, touchpointValue1},
-                {touchpointDateRangeParameter, touchpointDateRangeValue}
+                {touchPointParameter1, touchpointValue1},
+                {touchPointParameter2, touchpointValue2},
+                {touchPointParameter3, touchpointValue3},
+                {touchPointParameter4, touchpointValue4},
+                {touchPointParameter5, touchpointValue5},
+                {touchPointParameter6, touchpointValue6},
+                {touchPointParameter7, touchpointValue7},
+                {touchPointParameter8, touchpointValue8}
             };
             return criteria;
         }
